@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ścieżkomat</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <img src="images/logo2.PNG" alt="Logo Ścieżkoma1t" width="260">
+      </div>
+      <a href="quiz_site.html" class="cta-button-header transition-link">Przystąp do testu →</a>
+    </header>
+    <br>
+    <main>
+      <!-- pierwszy kafelek -->
+      <section class="hero-section">
+        <div class="hero-content">
+          <h1 style="font-size: 28px; margin-bottom: 20px;">Odkryj Studia, Które Do Ciebie Pasują!</h1>
+          <br>
+          <p style="font-size: 18px; line-height: 1.5;">
+          Ścieżkomat pomoże wybrać profesje, kierunek i rozszerzenia maruralne – bez ciągłych zmian.</h4>
+          </p>
+          <br>
+          <a href="quiz_site.html" class="cta-button transition-link">Rozpocznij test →</a>
+        </div>
+        <div class="hero-image">
+        <img src="images/Przechwytywanie.PNG" alt="">
+        </div>
+      </section>
+
+      <!-- 3 kafelki -->
+      <section class="features">
+        <div class="feature-card">
+          <i class="icon" data-lucide="message-circle-question"></i>
+          <h2>Tylko 45 Pytań !</h2>
+          <p>Szybki quiz, który w kilka minut pokaże, co do Ciebie pasuje.</p>
+        </div>
+
+        <div class="feature-card">
+          <i class="icon" data-lucide="trophy"></i>
+          <h2>Rzetelna Analiza !</h2>
+          <p>Test oparty na nauce – wyniki, którym możesz ufać.</p>
+        </div>
+
+        <div class="feature-card">
+          <i class="icon" data-lucide="zap"></i>
+          <h2>Wyniki Od Ręki !</h2>
+          <p>Dowiedz się od razu, bez czekania i zmieniania planów. Sprawdz uczelnie w twoim mieście</p>
+        </div>
+      </section>
+
+      <!-- ostatni kafelek o nas kafelek -->
+      <section class="hero2-section">
+        <div class="hero2-content">
+           <h1 style="font-size: 32px; margin-bottom: 20px;">🧠 O nas</h1>
+          <br>
+          <p style="font-size: 18px; line-height: 1.5;">
+          Jesteśmy grupą studentów Politechniki Wrocławskiej, których męczyło ciągłe zmienianie kierunku studiów.
+          Z własnego doświadczenia wiemy, jak trudno znaleźć coś, co naprawdę pasuje — i jak wiele to może kosztować czasu, stresu i pieniędzy.
+          <br><br>
+          Dlatego stworzyliśmy ten quiz. Jest w 100% darmowy i powstał z myślą o Was — przyszłych studentach, którzy chcą podjąć świadomą decyzję.
+          <br><br>
+          🎓 <strong>Bo rozumiemy, co znaczy być studentem.</strong>
+          </p>
+      
+        </div>
+        <div class="hero2-image">
+        <img src="images/StudenciPolibudy.png" alt="">
+        </div>
+      </section>
+
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+    </main>
+  </div>
+
+  
+  <script>
+    lucide.createIcons();
+    document.querySelectorAll('.lucide').forEach(icon => {
+      icon.setAttribute('stroke', '#1E90FF'); // Bezpośrednia wartość
+      // lub icon.setAttribute('stroke', 'var(--secondary)');
+    });
+  </script>
+
+  <script>
+  lucide.createIcons();
+  document.querySelectorAll('.lucide').forEach(icon => {
+    icon.setAttribute('stroke', '#1E90FF');
+  });
+
+  // Animacja przejścia
+  document.querySelectorAll('.transition-link').forEach(link => {
+    link.addEventListener('click', function(e) {
+      e.preventDefault();
+      const target = this.getAttribute('href');
+      document.body.classList.add('fade-out');
+      setTimeout(() => {
+        window.location.href = target;
+      }, 600); // czas musi pasować do animacji
+    });
+  });
+</script>
+
+</body>
+</html>

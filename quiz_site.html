@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <title>Ścieżkomat – Quiz</title>
+  <link rel="stylesheet" href="style_quiz.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="logo">
+        <img src="images/logo2.PNG" alt="Logo Ścieżkomat" width="260">
+      </div>
+      <a href="index.html" class="cta-button-header">Powrót do strony głównej →</a>
+    </header>
+    <!-- SEKCJA STARTU QUIZU -->
+    <section class="quiz-start">
+      <div class="container blue-box">
+        <h2>Rozpocznij Quiz</h2>
+        <p>45 szybkich pytań pomoże Ci znaleźć idealny kierunek studiów.</p>
+        <button id="start-btn" class="btn-primary">Zaczynamy!</button>
+      </div>
+    </section>
+
+    <!-- SEKCJA QUIZU -->
+    <section id="quiz-section" style="display: none;">
+      <div class="container quiz-card">
+        <h3 id="question-text">Pytanie pojawi się tutaj</h3>
+        <div id="answer-options"></div>
+        <div class="quiz-footer">
+          <button id="back-btn" class="btn-primary">Wstecz</button>
+          <span id="progress-text">Pytanie 1 z 30</span>
+          <button id="next-btn" class="btn-primary">Dalej</button>
+        </div>
+      </div>
+    </section>
+  </section>
+   <!-- SEKCJA ŁADOWANIA WYNIKÓW -->
+  <section id="loading-section" style="display: none;">
+  <div class="loading-container">
+    <div class="spinner"></div>
+    <p>Obliczanie wyniku...</p>
+  </div>
+    <script src="questions.js"></script>
+    <script src="script.js"></script>
+  </div>
+</body>
+</html>
